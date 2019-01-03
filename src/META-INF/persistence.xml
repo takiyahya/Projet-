@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="ProjetPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>bean.Adresse</class>
+    <class>bean.Availability</class>
+    <class>bean.AvailabilityType</class>
+    <class>bean.CentreInteret</class>
+    <class>bean.CentreInteretHote</class>
+    <class>bean.Event</class>
+    <class>bean.Felicitation</class>
+    <class>bean.Hote</class>
+    <class>bean.Langue</class>
+    <class>bean.LangueHote</class>
+    <class>bean.ParticipantEvent</class>
+    <class>bean.Pays</class>
+    <class>bean.Review</class>
+    <class>bean.TypeHebergement</class>
+    <class>bean.User</class>
+    <class>bean.Ville</class>
+    <class>bean.Voyage</class>
+    <class>bean.Demande</class>
+    <class>bean.Apropos</class>
+    <class>bean.TypeDemande</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/projet?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
